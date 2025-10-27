@@ -1,4 +1,4 @@
-app = "your-unique-discord-bot-name"
+app = "your-unique-music-bot"
 
 [build]
   dockerfile = "Dockerfile"
@@ -8,12 +8,11 @@ app = "your-unique-discord-bot-name"
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
-  min_machines_running = 1
-  
-  [[http_service.checks]]
-    interval = "30s"
-    grace_period = "10s"
-    method = "get"
-    path = "/health"
-    timeout = "5s"
+  min_machines_running = 0
 
+  [[http_service.checks]]
+    interval = "10s"
+    grace_period = "5s"
+    method = "get"
+    path = "/"
+    timeout = "2s"
