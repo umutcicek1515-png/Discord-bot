@@ -1,4 +1,4 @@
-app = "your-music-bot-123"
+app = "UmutMusicBot"
 
 [http_service]
   internal_port = 8080
@@ -11,3 +11,4 @@ app = "your-music-bot-123"
   method = "get"
   path = "/"
   timeout = "5s"
+
