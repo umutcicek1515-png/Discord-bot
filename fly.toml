@@ -1,4 +1,4 @@
-app = "UmutMusicBot"
+app = "your-unique-discord-bot-name"
 
 [build]
   dockerfile = "Dockerfile"
