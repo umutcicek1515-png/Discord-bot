@@ -16,4 +16,3 @@ app = "UmutMusicBot"
     method = "get" 
     path = "/health" 
     timeout = "5s" 
-

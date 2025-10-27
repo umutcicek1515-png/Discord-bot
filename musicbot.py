@@ -1,8 +1,7 @@
+# Add this code to the TOP of your musicbot.py file
+
 from flask import Flask
 from threading import Thread
-import discord
-import asyncio
-import os
 
 # Simple health check server for Fly.io
 app = Flask('')
@@ -27,7 +26,6 @@ def keep_alive():
 keep_alive()
 
 # YOUR EXISTING BOT CODE STARTS BELOW THIS LINE
-# Make sure this doesn't interfere with your current bot initialization
 import os
 import asyncio
 import logging
