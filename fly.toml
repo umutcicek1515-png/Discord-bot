@@ -1,18 +1,18 @@
-app = "UmutMusicBot" 
- 
-[build] 
-  builder = "paketobuildpacks/builder:base" 
- 
-[http_service] 
-  internal_port = 8080 
-  force_https = true 
-  auto_stop_machines = true 
-  auto_start_machines = true 
-  min_machines_running = 0 
- 
-  [[http_service.checks]] 
-    interval = "30s" 
-    grace_period = "10s" 
-    method = "get" 
-    path = "/health" 
-    timeout = "5s" 
+app = "UmutMusicBot"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  
+  [[http_service.checks]]
+    interval = "30s"
+    grace_period = "10s"
+    method = "get"
+    path = "/health"
+    timeout = "5s"
