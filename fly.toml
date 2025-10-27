@@ -1,14 +1,15 @@
-app = "UmutMusicBot"
+app = "discord-bot-7ci0ha"
+
+[build]
+  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = false
 
-[[http_service.checks]]
-  interval = "30s"
-  grace_period = "10s"
-  method = "get"
-  path = "/"
-  timeout = "5s"
-
+  [[http_service.checks]]
+    interval = "30s"
+    grace_period = "10s"
+    method = "get"
+    path = "/"
+    timeout = "5s"
